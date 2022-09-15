@@ -1,0 +1,17 @@
+reference chromosomes:
+	NC_000913.3 (total length: 4641652 bp, total length without N's: 4641652 bp, maximal covered length: 4641650 bp)
+
+total genome size: 4641652
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+flye-ont-ecoli           | 100.000   | 0.990       | 0         | -         | -         | -         | -         |
+racon_ont_ecoli          | 100.000   | 0.989       | 0         | -         | -         | -         | -         |
+velvet_ecoli             | 97.140    | 1.001       | 179       | -         | -         | -         | -         |
+wengan_ont_ecoli         | 99.979    | 1.000       | 1         | -         | -         | -         | -         |

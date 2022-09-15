@@ -1,0 +1,13 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+4526740	4641650	8	113765	NC_000913.3	contig_1	98.47		True
+indel: indel (<= 5bp) [linear representation of circular genome]
+1	1207805	113767	1309220	NC_000913.3	contig_1	98.42		True
+inversion
+1207806	1209602	1310999	1309221	NC_000913.3	contig_1	99.0		True
+inversion
+1209604	1873039	1311000	1967589	NC_000913.3	contig_1	98.46		True
+relocation, inconsistency = 105463
+1978503	1979270	1967590	1968350	NC_000913.3	contig_1	98.96		True
+relocation, inconsistency = -106240
+1873031	4526732	1968351	4594810	NC_000913.3	contig_1	98.44		True
+CONTIG	contig_1	4594810	misassembled

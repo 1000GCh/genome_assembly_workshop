@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper]{article}
+\begin{document}
+\begin{table}[ht]
+\begin{center}
+\caption{All statistics are based on contigs of size $\geq$ 500 bp, unless otherwise noted (e.g., "\# contigs ($\geq$ 0 bp)" and "Total length ($\geq$ 0 bp)" include all contigs).}
+\begin{tabular}{|l*{4}{|r}|}
+\hline
+Assembly & flye-ont-ecoli & racon\_ont\_ecoli & velvet\_ecoli & wengan\_ont\_ecoli \\ \hline
+\# misassemblies & 4 & 2 & {\bf 0} & 2 \\ \hline
+\hspace{2mm}\# contig misassemblies & 4 & 2 & 0 & 2 \\ \hline
+\hspace{5mm}\# c. relocations & 2 & 2 & 0 & 2 \\ \hline
+\hspace{5mm}\# c. translocations & 0 & 0 & 0 & 0 \\ \hline
+\hspace{5mm}\# c. inversions & 2 & 0 & 0 & 0 \\ \hline
+\hspace{2mm}\# scaffold misassemblies & 0 & 0 & 0 & 0 \\ \hline
+\hspace{5mm}\# s. relocations & 0 & 0 & 0 & 0 \\ \hline
+\hspace{5mm}\# s. translocations & 0 & 0 & 0 & 0 \\ \hline
+\hspace{5mm}\# s. inversions & 0 & 0 & 0 & 0 \\ \hline
+\# misassembled contigs & 1 & 1 & {\bf 0} & 1 \\ \hline
+Misassembled contigs length & 4594810 & 4590330 & {\bf 0} & 4641085 \\ \hline
+\# local misassemblies & 0 & 0 & 0 & 0 \\ \hline
+\# scaffold gap ext. mis. & 0 & 0 & 0 & 0 \\ \hline
+\# scaffold gap loc. mis. & 0 & 0 & 0 & 0 \\ \hline
+\# unaligned mis. contigs & 0 & 0 & 0 & 0 \\ \hline
+\# mismatches & 22493 & 18371 & {\bf 98} & 197 \\ \hline
+\# indels & 42656 & 50333 & {\bf 14} & 510 \\ \hline
+\hspace{5mm}\# indels ($\leq$ 5 bp) & 42648 & 50291 & {\bf 14} & 505 \\ \hline
+\hspace{5mm}\# indels ($>$ 5 bp) & 8 & 42 & {\bf 0} & 5 \\ \hline
+Indels length & 50034 & 64377 & {\bf 15} & 1029 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}

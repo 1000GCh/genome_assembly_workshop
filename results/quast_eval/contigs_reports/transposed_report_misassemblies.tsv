@@ -1,0 +1,5 @@
+Assembly	# misassemblies	  # contig misassemblies	    # c. relocations	    # c. translocations	    # c. inversions	  # scaffold misassemblies	    # s. relocations	    # s. translocations	    # s. inversions	# misassembled contigs	Misassembled contigs length	# local misassemblies	# scaffold gap ext. mis.	# scaffold gap loc. mis.	# unaligned mis. contigs	# mismatches	# indels	    # indels (<= 5 bp)	    # indels (> 5 bp)	Indels length
+flye-ont-ecoli	4	4	2	0	2	0	0	0	0	1	4594810	0	0	0	0	22493	42656	42648	8	50034
+racon_ont_ecoli	2	2	2	0	0	0	0	0	0	1	4590330	0	0	0	0	18371	50333	50291	42	64377
+velvet_ecoli	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	98	14	14	0	15
+wengan_ont_ecoli	2	2	2	0	0	0	0	0	0	1	4641085	0	0	0	0	197	510	505	5	1029

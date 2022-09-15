@@ -1,0 +1,9 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1	274074	274008	1	NC_000913.3	WSC5	99.97		True
+fake: not a misassembly [linear representation of circular genome]
+1873031	4641652	3042280	274009	NC_000913.3	WSC5	99.97		True
+relocation, inconsistency = -106240
+1978503	1979270	3043038	3042281	NC_000913.3	WSC5	98.7		True
+relocation, inconsistency = 105463
+275030	1873039	4641085	3043039	NC_000913.3	WSC5	99.97		True
+CONTIG	WSC5	4641085	misassembled

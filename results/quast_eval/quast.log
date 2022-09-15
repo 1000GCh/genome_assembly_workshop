@@ -1,0 +1,169 @@
+/home/adigenova/micromamba/bin/quast -o quast_eval -r ../../wengan_demo/ecoli/reference/ecoli-k12-ref.fna flye-ont-ecoli.fa racon_ont_ecoli.fa velvet_ecoli.fa wengan_ont_ecoli.fa
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-3.10.0-1160.59.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core (linux_64)
+  Python version: 3.7.12
+  CPUs number: 20
+
+Started: 2022-09-15 02:28:06
+
+Logging to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/quast.log
+NOTICE: Maximum number of threads is set to 5 (use --threads option to set it manually)
+
+CWD: /home/adigenova/tmp/genome_assembly_workshop/results
+Main parameters: 
+  MODE: default, threads: 5, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /home/adigenova/tmp/wengan_demo/ecoli/reference/ecoli-k12-ref.fna ==> ecoli-k12-ref
+
+Contigs:
+  Pre-processing...
+  1  flye-ont-ecoli.fa ==> flye-ont-ecoli
+  2  racon_ont_ecoli.fa ==> racon_ont_ecoli
+  3  velvet_ecoli.fa ==> velvet_ecoli
+  4  wengan_ont_ecoli.fa ==> wengan_ont_ecoli
+
+2022-09-15 02:28:10
+Running Basic statistics processor...
+  Reference genome:
+    ecoli-k12-ref.fna, length = 4641652, num fragments = 1, GC % = 50.79
+  Contig files: 
+    1  flye-ont-ecoli
+    2  racon_ont_ecoli
+    3  velvet_ecoli
+    4  wengan_ont_ecoli
+  Calculating N50 and L50...
+    1  flye-ont-ecoli, N50 = 4594810, L50 = 1, auN = 4594810.0, Total length = 4594810, GC % = 51.16, # N's per 100 kbp =  0.00
+    2  racon_ont_ecoli, N50 = 4590330, L50 = 1, auN = 4590330.0, Total length = 4590330, GC % = 51.07, # N's per 100 kbp =  0.00
+    3  velvet_ecoli, N50 = 19872, L50 = 65, auN = 25281.7, Total length = 4511775, GC % = 50.74, # N's per 100 kbp =  0.00
+    4  wengan_ont_ecoli, N50 = 4641085, L50 = 1, auN = 4641085.0, Total length = 4641085, GC % = 50.79, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/GC_content_plot.pdf
+  Drawing flye-ont-ecoli GC content plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/flye-ont-ecoli_GC_content_plot.pdf
+  Drawing racon_ont_ecoli GC content plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/racon_ont_ecoli_GC_content_plot.pdf
+  Drawing velvet_ecoli GC content plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/velvet_ecoli_GC_content_plot.pdf
+  Drawing wengan_ont_ecoli GC content plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/wengan_ont_ecoli_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/coverage_histogram.pdf
+  Drawing velvet_ecoli coverage histogram (bin size: 1x)...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/basic_stats/velvet_ecoli_coverage_histogram.pdf
+Done.
+
+2022-09-15 02:28:14
+Running Contig analyzer...
+  1  flye-ont-ecoli
+  2  racon_ont_ecoli
+  3  velvet_ecoli
+  4  wengan_ont_ecoli
+  1  Logging to files /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/contigs_reports/contigs_report_flye-ont-ecoli.stdout and contigs_report_flye-ont-ecoli.stderr...
+  2  Logging to files /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/contigs_reports/contigs_report_racon_ont_ecoli.stdout and contigs_report_racon_ont_ecoli.stderr...
+  1  Aligning contigs to the reference
+  3  Logging to files /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/contigs_reports/contigs_report_velvet_ecoli.stdout and contigs_report_velvet_ecoli.stderr...
+  2  Aligning contigs to the reference
+  4  Logging to files /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/contigs_reports/contigs_report_wengan_ont_ecoli.stdout and contigs_report_wengan_ont_ecoli.stderr...
+  3  Aligning contigs to the reference
+  4  Aligning contigs to the reference
+  3  /home/adigenova/micromamba/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 quast_eval/quast_corrected_input/ecoli-k12-ref.fna quast_eval/quast_corrected_input/velvet_ecoli.fa \
+     > quast_eval/contigs_reports/minimap_output/velvet_ecoli.coords_tmp 2>> quast_eval/contigs_reports/contigs_report_velvet_ecoli.stderr
+  2  /home/adigenova/micromamba/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 quast_eval/quast_corrected_input/ecoli-k12-ref.fna quast_eval/quast_corrected_input/racon_ont_ecoli.fa \
+     > quast_eval/contigs_reports/minimap_output/racon_ont_ecoli.coords_tmp 2>> quast_eval/contigs_reports/contigs_report_racon_ont_ecoli.stderr
+  1  /home/adigenova/micromamba/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 quast_eval/quast_corrected_input/ecoli-k12-ref.fna quast_eval/quast_corrected_input/flye-ont-ecoli.fa \
+     > quast_eval/contigs_reports/minimap_output/flye-ont-ecoli.coords_tmp 2>> quast_eval/contigs_reports/contigs_report_flye-ont-ecoli.stderr
+  4  /home/adigenova/micromamba/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 quast_eval/quast_corrected_input/ecoli-k12-ref.fna quast_eval/quast_corrected_input/wengan_ont_ecoli.fa \
+     > quast_eval/contigs_reports/minimap_output/wengan_ont_ecoli.coords_tmp 2>> quast_eval/contigs_reports/contigs_report_wengan_ont_ecoli.stderr
+  3  Analysis is finished.
+
+  4  Analysis is finished.
+
+  2  Analysis is finished.
+
+  1  Analysis is finished.
+
+  Creating total report...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2022-09-15 02:28:18
+Running NA-NGA calculation...
+  1  flye-ont-ecoli, Largest alignment = 3935672, NA50 = 3935672, NGA50 = 3935672, LA50 = 1, LGA50 = 1
+  2  racon_ont_ecoli, Largest alignment = 4589578, NA50 = 4589578, NGA50 = 4589578, LA50 = 1, LGA50 = 1
+  3  velvet_ecoli, Largest alignment = 71217, NA50 = 19872, NGA50 = 19331, LA50 = 65, LGA50 = 68
+  4  wengan_ont_ecoli, Largest alignment = 4640327, NA50 = 4640327, NGA50 = 4640327, LA50 = 1, LGA50 = 1
+  Drawing cumulative plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/aligned_stats/NGAx_plot.pdf
+Done.
+
+2022-09-15 02:28:19
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  1  flye-ont-ecoli
+  2  racon_ont_ecoli
+  3  velvet_ecoli
+  4  wengan_ont_ecoli
+  4  Analysis is finished.
+  2  Analysis is finished.
+  1  Analysis is finished.
+  3  Analysis is finished.
+  Drawing Genome fraction, % histogram...
+    saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/genome_stats/genome_fraction_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-09-15 02:28:21
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2022-09-15 02:28:25
+RESULTS:
+  Text versions of total report are saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/report.html
+  PDF version (tables and plots) is saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/report.pdf
+  Icarus (contig browser) is saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/icarus.html
+  Log is saved to /home/adigenova/tmp/genome_assembly_workshop/results/quast_eval/quast.log
+
+Finished: 2022-09-15 02:28:25
+Elapsed time: 0:00:18.170267
+NOTICEs: 4; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
